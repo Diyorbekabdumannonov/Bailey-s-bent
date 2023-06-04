@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="style.css">
     <script src="js/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <script src="./js/edit-js.js" defer></script>
     <title>Document</title>
@@ -85,7 +85,7 @@
                                     <a href="#" class="innner_previous_btn"><img src="images/backicon.png"
                                             alt="iconimg"></a>
                                 </div>
-                                 <div class="inner_tab_content">
+                                <div class="inner_tab_content">
                                     <div class="center_content">
                                         <h2 class="mb-5">Does <span class="pet_name"></span> get snacks
                                             regularly
@@ -97,8 +97,6 @@
                                                 <label class="form-check-label" for="radio1"><strong>Doesn't eat
                                                         any</strong><br>
                                                     Only on rare ocassions to none
-                                                    <br>
-                                                    <br><br>
                                                 </label>
                                                 <img src="images/dog_food1.png" alt="img" class="select_dog">
                                             </div>
@@ -141,7 +139,8 @@
                                                 apply:</strong>
                                         </p>
                                         <div id="health_eating">
-                                            <div class="d-flex justify-content-between mt-1">
+                                            <div
+                                                class="d-flex justify-content-between align-items-center mt-1 flex-column flex-md-row">
                                                 <div class="form-check custom_check position-relative">
                                                     <input type="radio" class="form-check-input" id="radio_10"
                                                         name="pet-kibbles" value="Kibbles">
@@ -161,7 +160,8 @@
                                                         for="radio_10"><i>Homemade</i></label>
                                                 </div>
                                             </div>
-                                            <div class="d-flex justify-content-evenly mt-2">
+                                            <div
+                                                class="d-flex justify-content-evenly mt-2 align-items-center mt-1 flex-column flex-md-row ">
                                                 <div class="form-check custom_check position-relative">
                                                     <input type="radio" class="form-check-input" id="radio_10"
                                                         name="pet-kibbles" value="Kibbles">
@@ -188,6 +188,38 @@
                                                     <option value="Labrador Retriever">Labrador Retriever</option>
                                                     <option value="Golden Retriever">Golden Retriever</option>
                                                 </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button"
+                                        class="btn btn-light rounded-pill text-uppercase fw-bold mt-5 btn-xl inner_next">NEXT<i
+                                            class="fa-solid fa-arrow-right-long ms-3 inner_next"></i></button>
+                                    <a href="#" class="innner_previous_btn"><img src="images/backicon.png"
+                                            alt="iconimg"></a>
+                                </div>
+                                <div class="inner_tab_content">
+                                    <div class="center_content">
+                                        <h2 class="mt-5 mb-4">Tell us more about yourself!</h2>
+                                        <div class="mt-4 contact">
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control" id="" placeholder="First Name"
+                                                    name="owner-name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control" id="" placeholder="Last Name"
+                                                    name="owner-lastname">
+                                            </div>
+                                            <div class="mb-3">
+                                                <input type="email" class="form-control" id="" placeholder="Email"
+                                                    name="owner-email">
+                                            </div>
+                                            <div class="form-check mb-3">
+                                                <label class="form-check-label text-start">
+                                                    <input class="form-check-input" type="checkbox" name="remember">
+                                                    Receive updates, newsletter from Bailey’s Bento. You can
+                                                    <br>unsubscribe anytime
+
+                                                </label>
                                             </div>
                                         </div>
                                     </div>

@@ -4,7 +4,7 @@ jQuery(function ($) {
   ).length;
   $(".inner_next").click(function () {
     var getindex = $(this).parents(".inner_tab_content").index() + 1;
-
+    console.log(getindex);
     if (getindex == 1) {
       var isFussy = $(this)
         .parents(".inner_tab_content")
@@ -38,23 +38,13 @@ jQuery(function ($) {
           .hide();
       }
     }
-    if (getindex == 3) {
-      var isChallenge = $(this)
+    if (getindex == 2) {
+      var isSnack = $(this)
         .parents(".inner_tab_content")
-        .find('input[name="pet-health-challenges"]')
+        .find('input[name="snackradio"]')
         .is(":checked");
-      var isChallengeType = $(this)
-        .parents(".inner_tab_content")
-        .find('input[name="pet-health-challenges"]:checked')
-        .val();
-      var challengeVal = $(this)
-        .parents(".inner_tab_content")
-        .find('#health_challenges_to_apply input[type="checkbox"]')
-        .is(":checked");
-      if (isChallenge == false) {
-        alert("Please select challenges");
-      } else if (challengeVal == false && isChallengeType == "Yes") {
-        alert("Please select challenge type below");
+      if (isSnack == false) {
+        alert("Please select Snack");
       } else {
         $("#tab ul li.tab2")
           .find(".current_step")
@@ -71,10 +61,10 @@ jQuery(function ($) {
           .hide();
       }
     }
-    if (getindex == 2) {
+    if (getindex == 3) {
       var isSnack = $(this)
         .parents(".inner_tab_content")
-        .find('input[name="snackradio"]')
+        .find('input[name="pet-kibbles"]')
         .is(":checked");
       if (isSnack == false) {
         alert("Please select Snack");

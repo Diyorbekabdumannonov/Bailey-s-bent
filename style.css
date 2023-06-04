@@ -1,14 +1,14 @@
 body {
     background-color: #ffffff;
-    color: #000000;
+    color: #303453 !important;
     font-size: 15px;
     overflow-x: hidden;
     font-family: 'Quicksand', sans-serif;
 }
 
 .center_content h2 {
-    font-size: 32px;
-    font-weight: 700;
+    font-size: 32px !important;
+    font-weight: 700 !important;
 }
 
 .form-check label p {
@@ -17,23 +17,44 @@ body {
 }
 
 .form-check label i {
+    font-family: sans-serif;
     font-size: 14px;
     font-weight: 400;
 }
 
-.form-check-label strong{
+#health_eating .custom_check {
+    height: 48px;
+}
+
+.form-check-label strong {
     font-size: 13px;
     font-weight: bold !important;
 }
 
-p.form-check-label{
-    font-size: 15px;
+p.form-check-label strong {
+    font-size: 15px !important;
     font-weight: 700;
+}
+
+label.form-check-label {
+    font-size: 13px;
+}
+
+.form-check .form-check-label {
+    margin-bottom: 50px;
 }
 
 .form-check-input {
     font-size: 14px;
     font-weight: 400;
+}
+
+.contact * {
+    font-size: 14px !important;
+}
+
+.contact ::placeholder {
+    font-size: 14px !important;
 }
 
 img {
@@ -619,11 +640,6 @@ a.custom_btn {
     display: block;
     background-color: white;
     outline: none;
-}
-
-/*=========================== sandip css =======================*/
-body {
-    font-family: 'Open Sans', sans-serif;
 }
 
 .bento_box {
