@@ -31,6 +31,26 @@ body {
     font-weight: bold !important;
 }
 
+
+#health_eating .justify-content-evenly {
+    margin-top: 0 !important;
+}
+#brand_dropdown input {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 100px;
+    outline: none;
+    font-style: italic;
+}
+
+#brand_dropdown input::placeholder {
+    color: black;
+}
+
 p.form-check-label strong {
     font-size: 15px !important;
     font-weight: 700;
@@ -561,8 +581,12 @@ ul.nextpage_process li.active i {
     margin: 0 auto;
 }
 
-.dog-check input[type="radio"]:checked+label+img.select_dog {
+.dog-check input[type="radio"]:checked+label {
     opacity: 1;
+}
+
+.dog-check input[type="radio"]:checked .select_dog {
+    opacity: 1 !important;
 }
 
 .form-check.proteins_check .form-check-input {
