@@ -30,6 +30,11 @@
     <form action="">
         <div class="container">
             <div id="tab">
+                <ul class="nextpage_process text-center">
+                    <li class="tab1"><a href="#">Health (<span class="current_step">1</span> of <span
+                                class="total_inner_step">4</span>)</span></a>
+                    </li>
+                </ul>
                 <div class="tab-body">
                     <div class="tab-content">
                         <div id="inner_tab2">
@@ -181,50 +186,54 @@
                                         </div>
                                         <hr>
                                         <div class="mt-4" id="brand_dropdown">
-                                            <input type="text" name="" id="" placeholder="Name of brand (if applicable)">
+                                            <input type="text" name="" id=""
+                                                placeholder="Name of brand (if applicable)">
                                         </div>
                                         <button type="button"
                                             class="btn btn-light rounded-pill text-uppercase fw-bold mt-5 btn-xl inner_next">NEXT<i
                                                 class="fa-solid fa-arrow-right-long ms-3 inner_next"></i></button>
                                     </div>
-                                    <div class="inner_tab_content">
-                                        <div class="center_content">
-                                            <h2 class="mt-5 mb-4">Tell us more about yourself!</h2>
-                                            <div class="mt-4 contact">
-                                                <div class="mb-3">
-                                                    <input type="text" class="form-control" id=""
-                                                        placeholder="First Name" name="owner-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <input type="text" class="form-control" id=""
-                                                        placeholder="Last Name" name="owner-lastname">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <input type="email" class="form-control" id="" placeholder="Email"
-                                                        name="owner-email">
-                                                </div>
-                                                <div class="form-check mb-3">
-                                                    <label class="form-check-label text-start">
-                                                        <input class="form-check-input" type="checkbox" name="remember">
-                                                        Receive updates, newsletter from Bailey’s Bento. You can
-                                                        <br>unsubscribe anytime
+                                    <a href="#" class="innner_previous_btn"><img src="images/backicon.png"
+                                            alt="iconimg"></a>
+                                </div>
+                                <div class="inner_tab_content">
+                                    <div class="center_content">
+                                        <h2 class="mt-5 mb-4">Tell us more about yourself!</h2>
+                                        <div class="mt-4 contact">
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control" id="info"
+                                                    placeholder="First Name" name="info">
+                                            </div>
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control" id="info"
+                                                    placeholder="Last Name" name="info">
+                                            </div>
+                                            <div class="mb-3">
+                                                <input type="email" class="form-control" id="info" placeholder="Email"
+                                                    name="info">
+                                            </div>
+                                            <div class="form-check mb-3">
+                                                <label class="form-check-label text-start">
+                                                    <input class="form-check-input" type="checkbox" name="remember">
+                                                    Receive updates, newsletter from Bailey’s Bento. You can
+                                                    <br>unsubscribe anytime
 
-                                                    </label>
-                                                </div>
+                                                </label>
                                             </div>
                                         </div>
-                                        <button type="button"
-                                            class="btn btn-light rounded-pill text-uppercase fw-bold mt-5 btn-xl next">NEXT<i
-                                                class="fa-solid fa-arrow-right-long ms-3"></i></button>
-                                        <a href="#" class="innner_previous_btn"><img src="images/backicon.png"
-                                                alt="iconimg"></a>
                                     </div>
+                                    <button type="button"
+                                        class="btn btn-light rounded-pill text-uppercase fw-bold mt-5 btn-xl next">NEXT<i
+                                            class="fa-solid fa-arrow-right-long ms-3"></i></button>
+                                    <a href="#" class="innner_previous_btn"><img src="images/backicon.png"
+                                            alt="iconimg"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </form>
 </div>
 </body>

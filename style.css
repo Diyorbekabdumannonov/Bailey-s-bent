@@ -187,14 +187,7 @@ header {
 }
 
 ul.nextpage_process {
-    color: #d9d9d9;
-    font-weight: 700;
-    list-style-type: none;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+   display: none;
 }
 
 ul.nextpage_process li {
