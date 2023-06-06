@@ -776,6 +776,20 @@ a.main_previous_btn {
 /*====================================== Responsive ================================*/
 
 @media (max-width: 768px) {
+    ul.nextpage_process {
+        display: flex;
+        padding-left: 0 !important;
+    }
+
+    ul.nextpage_process li .step_pagination {
+        display: block;
+    }
+
+    .rs {
+        width: 160px !important;
+        margin: auto !important;
+    }
+
     .logo {
         max-width: 230px;
     }
@@ -784,7 +798,7 @@ a.main_previous_btn {
         padding: 129px 15px 0 15px;
     }
 
-    .dog-check .fst{
+    .dog-check .fst {
         padding: 145px 15px 0 15px !important;
     }
 

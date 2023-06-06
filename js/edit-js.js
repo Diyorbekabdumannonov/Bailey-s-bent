@@ -43,11 +43,11 @@ jQuery(function ($) {
         } else if (fussyVal == true && isFussyType == false) {
           alert("Please select fussy type below");
         } else {
-          $("#tab ul li.tab2")
+          $("#tab ul li.tab1")
             .find(".current_step")
             .text(getindex + 1);
           if (totalSteps1 == getindex + 1) {
-            $("#tab ul li.tab2").addClass("completed_step");
+            $("#tab ul li.tab1").addClass("completed_step");
           }
           $(this)
             .parents(".inner_tab_body")
@@ -65,11 +65,11 @@ jQuery(function ($) {
         if (isSnack == false) {
           alert("Please select Snack");
         } else {
-          $("#tab ul li.tab2")
+          $("#tab ul li.tab1")
             .find(".current_step")
             .text(getindex + 1);
           if (totalSteps1 == getindex + 1) {
-            $("#tab ul li.tab2").addClass("completed_step");
+            $("#tab ul li.tab1").addClass("completed_step");
           }
           $(this)
             .parents(".inner_tab_body")
@@ -87,11 +87,11 @@ jQuery(function ($) {
         if (isSnack == false) {
           alert("Please select Snack");
         } else {
-          $("#tab ul li.tab2")
+          $("#tab ul li.tab1")
             .find(".current_step")
             .text(getindex + 1);
           if (totalSteps1 == getindex + 1) {
-            $("#tab ul li.tab2").addClass("completed_step");
+            $("#tab ul li.tab1").addClass("completed_step");
           }
           $(this)
             .parents(".inner_tab_body")
@@ -124,7 +124,7 @@ jQuery(function ($) {
       console.log(getindex);
       if (getindex == 0) {
         if (isFussy == true) {
-          $("#tab ul li.tab2").find(".current_step").text(2);
+          $("#tab ul li.tab1").find(".current_step").text(2);
           $(".inner_tab_body")
             .find(".inner_tab_content")
             .eq(1)
@@ -135,7 +135,7 @@ jQuery(function ($) {
       }
       if (getindex == 1) {
         if (isSnack == true) {
-          $("#tab ul li.tab2").find(".current_step").text(3);
+          $("#tab ul li.tab1").find(".current_step").text(3);
           $(".inner_tab_body")
             .find(".inner_tab_content")
             .eq(2)
@@ -146,7 +146,7 @@ jQuery(function ($) {
       }
       if (getindex == 2) {
         if (kibles == true) {
-          $("#tab ul li.tab2").find(".current_step").text(4);
+          $("#tab ul li.tab1").find(".current_step").text(4);
           $(".inner_tab_body")
             .find(".inner_tab_content")
             .eq(3)
@@ -157,7 +157,7 @@ jQuery(function ($) {
       }
       if (getindex == 3) {
         if (kibles == true) {
-          $("#tab ul li.tab2").find(".current_step").text(4);
+          $("#tab ul li.tab1").find(".current_step").text(4);
           $(".inner_tab_body")
             .find(".inner_tab_content")
             .eq(3)
@@ -193,11 +193,11 @@ jQuery(function ($) {
       } else if (fussyVal == true && isFussyType == false) {
         alert("Please select fussy type below");
       } else {
-        $("#tab ul li.tab2")
+        $("#tab ul li.tab1")
           .find(".current_step")
           .text(getindex + 1);
         if (totalSteps1 == getindex + 1) {
-          $("#tab ul li.tab2").addClass("completed_step");
+          $("#tab ul li.tab1").addClass("completed_step");
         }
         $(this)
           .parents(".inner_tab_body")
@@ -216,11 +216,11 @@ jQuery(function ($) {
       if (isSnack == false) {
         alert("Please select Snack");
       } else {
-        $("#tab ul li.tab2")
+        $("#tab ul li.tab1")
           .find(".current_step")
           .text(getindex + 1);
         if (totalSteps1 == getindex + 1) {
-          $("#tab ul li.tab2").addClass("completed_step");
+          $("#tab ul li.tab1").addClass("completed_step");
         }
         $(this)
           .parents(".inner_tab_body")
@@ -239,11 +239,11 @@ jQuery(function ($) {
       if (isSnack == false) {
         alert("Please select Snack");
       } else {
-        $("#tab ul li.tab2")
+        $("#tab ul li.tab1")
           .find(".current_step")
           .text(getindex + 1);
         if (totalSteps1 == getindex + 1) {
-          $("#tab ul li.tab2").addClass("completed_step");
+          $("#tab ul li.tab1").addClass("completed_step");
         }
         $(this)
           .parents(".inner_tab_body")
