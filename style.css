@@ -689,6 +689,7 @@ ul.nextpage_process li.current .step_pagination {
 
 ul.nextpage_process li.completed_step a {
     position: relative;
+    color: black;
     padding-left: 13px;
 }
 
