@@ -35,6 +35,7 @@ body {
 #health_eating .justify-content-evenly {
     margin-top: 0 !important;
 }
+
 #brand_dropdown input {
     width: 100%;
     text-align: center;
@@ -187,7 +188,7 @@ header {
 }
 
 ul.nextpage_process {
-   display: none;
+    display: none;
 }
 
 ul.nextpage_process li {
@@ -777,6 +778,18 @@ a.main_previous_btn {
 @media (max-width: 768px) {
     .logo {
         max-width: 230px;
+    }
+
+    .dog-check .form-check {
+        padding: 129px 15px 0 15px;
+    }
+
+    .dog-check .fst{
+        padding: 145px 15px 0 15px !important;
+    }
+
+    .form-check .form-check-label {
+        margin: 0;
     }
 
     .back_page {
