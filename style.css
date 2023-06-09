@@ -11,6 +11,12 @@ body {
     font-weight: 700 !important;
 }
 
+.gender p {
+    font-size: 17px;
+    font-weight: 400;
+    text-align: left;
+}
+
 .form-check label p {
     font-size: 15px;
     font-weight: 700;
@@ -259,6 +265,27 @@ ul.nextpage_process li.active i {
     padding: 0;
 }
 
+.half {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    height: 100%;
+    right: 0;
+    background-color: white;
+}
+
+.rlt {
+    position: relative;
+    width: 296px;
+    height: 146px;
+}
+
+.gender .custom_check {
+    height: 45px;
+}
+
 .custom_check label {
     background-color: #fff;
     width: 150px;
@@ -308,12 +335,66 @@ ul.nextpage_process li.active i {
 .gender {
     border-radius: 100% 100% 30px 30px;
     width: 50%;
+    position: relative;
+}
+
+.gender .recommended {
+    position: absolute;
+    top: -32px;
+    right: 0;
+    animation: 3s bounce ease infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 .gender img {
-    width: 160px;
-    height: 160px;
+    width: 146px;
+    height: 146px;
     object-fit: cover;
+}
+
+.second p:first-child {
+    font-size: 20px !important;
+    max-width: 300px !important;
+    margin: auto !important;
+    text-align: center !important;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gender h6 {
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.gender .form-check-label {
+    font-size: 19px !important;
+    font-weight: 500;
 }
 
 .gender .grfirst {

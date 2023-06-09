@@ -98,7 +98,56 @@ jQuery(function ($) {
         }
       }
       if (getindex == 4) {
-        $("#tab ul li.tab3").addClass("completed_step");
+        const accInfo = $(this)
+          .parents(".inner_tab_content")
+          .find('input[name="info"')
+          .val();
+        var ownerEmail = $(this)
+          .parents(".inner_tab_content")
+          .find('input[type="email"]')
+          .val();
+        var validatePass = false;
+        var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+        if (testEmail.test(ownerEmail)) {
+          validatePass = true;
+        } else {
+          validatePass = false;
+        }
+        if (accInfo == "") {
+          alert("Please enter personal information");
+        } else if (ownerEmail == "") {
+          alert("please enter the email");
+        } else if (ownerEmail != "" && validatePass == false) {
+          alert("Not a valid email address");
+        } else {
+          $("#tab ul li.tab3").addClass("completed_step");
+          $("#tab ul li.tab4").addClass("current_step");
+          $(this)
+            .parents(".inner_tab_body")
+            .find(".inner_tab_content")
+            .eq(getindex)
+            .show()
+            .siblings()
+            .hide();
+        }
+      }
+      if (getindex == 5) {
+        var isSnack = $(".inner_tab_content")
+          .find('input[name="pet-plan"]')
+          .is(":checked");
+        if (isSnack != "") {
+          return;
+        } else {
+          $("#tab ul li.tab4").addClass("completed_step");
+          $("#tab ul li.tab5").addClass("current_step");
+          $(this)
+            .parents(".inner_tab_body")
+            .find(".inner_tab_content")
+            .eq(getindex)
+            .show()
+            .siblings()
+            .hide();
+        }
       }
     }
   });
@@ -152,10 +201,21 @@ jQuery(function ($) {
             .hide();
         }
       }
-      if (getindex == 3) {
-        if (kibles == true) {
-          $("#tab ul li.tab3").addClass(".completed_step");
-        }
+      if (getindex == 4) {
+        $(".inner_tab_body")
+          .find(".inner_tab_content")
+          .eq(4)
+          .show()
+          .siblings()
+          .hide();
+      }
+      if (getindex == 5) {
+        $(".inner_tab_body")
+          .find(".inner_tab_content")
+          .eq(5)
+          .show()
+          .siblings()
+          .hide();
       }
     }
   });
@@ -238,6 +298,51 @@ jQuery(function ($) {
           .show()
           .siblings()
           .hide();
+      }
+    }
+    if (getindex == 4) {
+      const accInfo = $(this)
+        .parents(".inner_tab_content")
+        .find('input[name="info"')
+        .val();
+      var ownerEmail = $(this)
+        .parents(".inner_tab_content")
+        .find('input[type="email"]')
+        .val();
+      var validatePass = false;
+      var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+      if (testEmail.test(ownerEmail)) {
+        validatePass = true;
+      } else {
+        validatePass = false;
+      }
+      if (accInfo == "") {
+        alert("Please enter personal information");
+      } else if (ownerEmail == "") {
+        alert("please enter the email");
+      } else if (ownerEmail != "" && validatePass == false) {
+        alert("Not a valid email address");
+      } else {
+        $("#tab ul li.tab2").addClass("completed_step");
+        $("#tab ul li.tab3").addClass("current_step");
+        $(this)
+          .parents(".inner_tab_body")
+          .find(".inner_tab_content")
+          .eq(getindex)
+          .show()
+          .siblings()
+          .hide();
+      }
+    }
+    if (getindex == 5) {
+      var isSnack = $(".inner_tab_content")
+        .find('input[name="pet-plan"]')
+        .is(":checked");
+      if (isSnack != "") {
+        return;
+      } else {
+        $("#tab ul li.tab4").addClass("completed_step");
+        $("#tab ul li.tab5").addClass("current_step");
       }
     }
   });
