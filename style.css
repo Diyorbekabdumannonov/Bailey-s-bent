@@ -188,7 +188,10 @@ header {
 }
 
 ul.nextpage_process {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700 !important;
 }
 
 ul.nextpage_process li {
@@ -679,10 +682,6 @@ a.custom_btn {
     display: block;
 }
 
-ul.nextpage_process li .step_pagination {
-    display: none;
-}
-
 ul.nextpage_process li.current .step_pagination {
     display: inline-block;
 }
@@ -813,6 +812,7 @@ a.main_previous_btn {
 
     ul.nextpage_process li {
         font-size: 12px;
+        height: 18px;
         line-height: 13px;
     }
 
