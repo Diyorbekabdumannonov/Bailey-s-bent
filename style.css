@@ -862,6 +862,23 @@ a.main_previous_btn {
         padding-left: 0 !important;
     }
 
+    .gender {
+        width: 100% !important;
+    }
+
+    .gender img {
+        width: 84px;
+        height: 84px;
+    }
+
+    .rtl {
+        height: 83px;
+    }
+
+    .recommended {
+        top: 0;
+    }
+
     ul.nextpage_process li .step_pagination {
         display: block;
     }
