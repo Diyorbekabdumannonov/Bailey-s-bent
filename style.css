@@ -773,6 +773,14 @@ ul.nextpage_process li.completed_step a {
     padding-left: 13px;
 }
 
+.current_step a  {
+    color: black !important;
+}
+
+.current_step.li:after {
+    background-color: black !important;
+}
+
 ul.nextpage_process li.completed_step:after {
     background-color: #3f4f5f;
 }

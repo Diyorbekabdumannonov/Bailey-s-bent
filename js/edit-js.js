@@ -343,21 +343,26 @@ jQuery(function ($) {
         alert("please select type below");
       } else {
         $("#tab ul li.tab4").addClass("completed_step");
-        $("#tab ul li.tab5").addClass("current_step");
       }
     }
   });
   $("#inner_tab2 a.innner_previous_btn").click(function (e) {
     e.preventDefault();
     var getindex = $(this).parents(".inner_tab_content").index() - 1;
-    if(getindex==3){
-      $("#tab ul li.tab4").addClass("current_step");
+    if (getindex == 3) {
+      $("#tab ul li.tab4").removeClass("current_step");
+      $("#tab ul li.tab3").addClass("current_step");
       $("#tab ul li.tab4").removeClass("completed_step");
     }
-     if (getindex == 2) {
-       $("#tab ul li.tab3").addClass("current_step");
-       $("#tab ul li.tab3").removeClass("completed_step");
-     }
+    if (getindex == 2) {
+      $("#tab ul li.tab3").removeClass("current_step");
+      $("#tab ul li.tab2").addClass("current_step");
+      $("#tab ul li.tab3").removeClass("completed_step");
+    }
+    if (getindex == 1) {
+      $("#tab ul li.tab").removeClass("current_step");
+      $("#tab ul li.tab2").removeClass("completed_step");
+    }
     console.log(getindex);
     $("#tab ul li.tab2")
       .find(".current_step")
