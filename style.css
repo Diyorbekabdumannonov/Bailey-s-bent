@@ -11,6 +11,92 @@ body {
     font-weight: 700 !important;
 }
 
+.over_recommended {
+    right: 0;
+    position: absolute;
+    top: -35px;
+    width: 135px;
+    transform: unset;
+}
+
+#inner_tab2 .bento_box {
+    max-width: 790px;
+}
+
+#inner_tab2 .bento_box .border1,
+#inner_tab2 .bento_box .border2 {
+    border-top: 1px solid #ccc;
+    opacity: .25;
+    background: transparent;
+}
+
+#inner_tab2 .amount_box {
+    padding: 0;
+    border-radius: 150px 150px 30px 30px;
+}
+
+#inner_tab2 .amount_box .over_recommended {
+    right: 0;
+    position: absolute;
+    top: -35px;
+    width: 135px;
+    transform: unset;
+}
+
+#inner_tab2 .amount_box_in {
+    min-height: 435px;
+}
+
+#inner_tab2 .amount_box .top_area {
+    background: #f8f3e8;
+    padding: 40px 30px 14px;
+    border-radius: 150px 150px 0 0;
+}
+
+#inner_tab2 .amount_box .top_area .row>.col-md-3 {
+    padding-right: 5px;
+    width: 32%;
+}
+
+#inner_tab2 .amount_box .top_area .row>.col-md-9 {
+    padding-left: 0;
+    width: 68%;
+}
+
+#inner_tab2 .amount_box .top_area h2 {
+    font-size: 25px;
+}
+
+#inner_tab2 .amount_box .top_area h5 {
+    font-size: 15px;
+    font-style: italic;
+    font-family: Montserrat, sans-serif;
+    color: #4b597a;
+}
+
+#inner_tab2 .amount_box .buttom_area {
+    padding: 25px 19px 10px;
+    margin: 0;
+}
+
+#inner_tab2 .amount_box .buttom_area h4 {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    font-size: 15px;
+    color: #4b597a;
+    max-width: 250px;
+}
+
+#inner_tab2 .amount_box .buttom_area h5 {
+    margin: 20px 0 9px;
+    font-weight: 700;
+    color: #2a395e;
+}
+
+#inner_tab2 .amount_box .buttom_area+div {
+    padding: 0 25px;
+}
+
 .gender p {
     font-size: 17px;
     font-weight: 400;
@@ -710,7 +796,7 @@ ul.nextpage_process li.active i {
     border: 1px #ccc solid;
     padding: 15px;
     position: relative;
-    height: 100%;
+    height: 90%;
 }
 
 .amount_box ul li {
@@ -951,7 +1037,7 @@ a.main_previous_btn {
     }
 
     .amount_box {
-        height: auto;
+        height: 100%;
     }
 
     .popup_overlay_div .popup_content {

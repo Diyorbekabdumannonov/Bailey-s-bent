@@ -88,6 +88,7 @@ jQuery(function ($) {
           alert("Please select Snack");
         } else {
           $("#tab ul li.tab2").addClass("completed_step");
+          $("#tab ul li.tab3").addClass("current_step active");
           $(this)
             .parents(".inner_tab_body")
             .find(".inner_tab_content")
@@ -290,7 +291,7 @@ jQuery(function ($) {
         alert("Please select Snack");
       } else {
         $("#tab ul li.tab2").addClass("completed_step");
-        $("#tab ul li.re").addClass("current_step active");
+        $("#tab ul li.tab3").addClass("current_step active");
         $(this)
           .parents(".inner_tab_body")
           .find(".inner_tab_content")
