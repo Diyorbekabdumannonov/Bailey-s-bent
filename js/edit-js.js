@@ -121,7 +121,7 @@ jQuery(function ($) {
           alert("Not a valid email address");
         } else {
           $("#tab ul li.tab3").addClass("completed_step");
-          $("#tab ul li.tab4").addClass("current_step");
+          $("#tab ul li.tab4").addClass("current_step active");
           $(this)
             .parents(".inner_tab_body")
             .find(".inner_tab_content")
@@ -139,7 +139,7 @@ jQuery(function ($) {
           return;
         } else {
           $("#tab ul li.tab4").addClass("completed_step");
-          $("#tab ul li.tab5").addClass("current_step");
+          $("#tab ul li.tab5").addClass("current_step active");
           $(this)
             .parents(".inner_tab_body")
             .find(".inner_tab_content")
@@ -290,7 +290,7 @@ jQuery(function ($) {
         alert("Please select Snack");
       } else {
         $("#tab ul li.tab2").addClass("completed_step");
-        $("#tab ul li.tab3").addClass("current_step");
+        $("#tab ul li.re").addClass("current_step active");
         $(this)
           .parents(".inner_tab_body")
           .find(".inner_tab_content")
@@ -324,7 +324,7 @@ jQuery(function ($) {
         alert("Not a valid email address");
       } else {
         $("#tab ul li.tab3").addClass("completed_step");
-        $("#tab ul li.tab4").addClass("current_step");
+        $("#tab ul li.tab4").addClass("current_step active");
         $(this)
           .parents(".inner_tab_body")
           .find(".inner_tab_content")
@@ -350,15 +350,15 @@ jQuery(function ($) {
     e.preventDefault();
     var getindex = $(this).parents(".inner_tab_content").index() - 1;
     if (getindex == 3) {
-      $("#tab ul li.tab4").removeClass("current_step");
+      $("#tab ul li.tab4").removeClass("current_step active");
       $("#tab ul li.tab4").removeClass("completed_step");
     }
     if (getindex == 2) {
-      $("#tab ul li.tab3").removeClass("current_step");
+      $("#tab ul li.tab3").removeClass("current_step active");
       $("#tab ul li.tab3").removeClass("completed_step");
     }
     if (getindex == 1) {
-      $("#tab ul li.tab").removeClass("current_step");
+      $("#tab ul li.tab").removeClass("current_step active");
       $("#tab ul li.tab2").removeClass("completed_step");
     }
     console.log(getindex);
