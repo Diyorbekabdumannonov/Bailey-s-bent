@@ -337,7 +337,7 @@ jQuery(function ($) {
     }
     if (getindex == 5) {
       var isSnack = $(".inner_tab_content")
-        .find('input[name="pet-plan"]')
+        .find('input[name="bento-form[full-bento-box]"]')
         .is(":checked");
       if (isSnack == "") {
         console.log("smth");
